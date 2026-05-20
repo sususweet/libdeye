@@ -1,10 +1,12 @@
 """Utilities for device command parsing"""
 
 from enum import IntFlag, auto
+
 from .const import (
     DeyeDeviceMode,
     DeyeFanSpeed,
 )
+
 
 class DeyeDeviceCommand:
     """A class to store the command to control the device"""
