@@ -167,9 +167,10 @@ def test_deye_device_command_to_json_diff() -> None:
 
 def test_deye_device_command_to_json_diff_from_state() -> None:
     """Test to_json_diff() accepts DeyeDeviceState as baseline."""
+    from typing import cast
+
     from libdeye.cloud_api import DeyeApiResponseFogPlatformDeviceProperties
     from libdeye.device_state import DeyeDeviceState
-    from typing import cast
 
     state = DeyeDeviceState(
         cast(
