@@ -1,10 +1,16 @@
 """Utilities for device command parsing"""
 
 from enum import IntFlag, auto
+from typing import TYPE_CHECKING
+
 from .const import (
     DeyeDeviceMode,
     DeyeFanSpeed,
 )
+
+if TYPE_CHECKING:
+    from .device_state import DeyeDeviceState
+
 
 class DeyeDeviceCommand:
     """A class to store the command to control the device"""
